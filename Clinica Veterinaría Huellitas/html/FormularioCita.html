@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/formularioCita.css" >
+        <title>Pide tú Cita</title>
+    </head>
+    <body>
+        <div class="formulario-container">
+            <h3>ESCRÍBENOS</h3>
+            <form action="/api/citas" method="POST"> 
+                <label for="nombre">Nombre y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <label>¿Cuál es el problema?</label>
+                <select name="Tipo" required> 
+                    <option value="cita">Consulta</option>
+                    <option value="vacuna">Vacuna</option>
+                    <option value="revision">Revisión</option>
+                    <option value="peluquería">Peluquería</option>
+                </select>
+    
+                <label for="explicacion">Explícanos qué ocurre:</label>
+                <textarea id="explicacion" name="explicacion" maxlength="300"></textarea>
+    
+                <input type="submit" value="Enviar Mensaje">
+            </form>
+        </div>
+    </body>
+    </html>

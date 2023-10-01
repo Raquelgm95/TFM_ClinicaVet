@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registro.css" >
+    <title>Registro</title>
+</head>
+<body>
+
+<!--Formulario Cliente-->
+
+<section id="registroCliente">
+    <h2>Registro del Nuevo Cliente</h2>
+    <form action="/api/clientes" method="post"> 
+        <label for="nombreCliente">Nombre:</label>
+        <input type="text" id="nombreCliente" name="nombreCliente" required>
+
+        <label for="apellidosCliente">Apellidos:</label>
+        <input type="text" id="apellidosCliente" name="apellidosCliente" required>
+
+
+        <label for="telefonoCliente">Teléfono:</label>
+        <input type="tel" id="telefonoCliente" name="telefonoCliente" required>
+
+        <label for="correoCliente">Correo Electrónico:</label>
+        <input type="email" id="correoCliente" name="correoCliente" required>
+
+        <label for="direccionCliente">Dirección:</label>
+        <input type="text" id="direccionCliente" name="direccionCliente" required>
+
+        <input type="submit" value="Registrar Cliente">
+    </form>
+</section>
+
+<!-- Formulario de Registro de Mascota -->
+
+<section id="registroMascota">
+    <h2>Registro de la Mascota</h2>
+    <form action="/api/mascotas" method="post">
+        <label for="nombreMascota">Nombre de la Mascota:</label>
+        <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+        <label for="tipoMascota">Tipo de mascota:</label>
+        <input type="text" id="tipoMascota" name="tipoMascota" required>
+
+        <label for="razaMascota">Raza de la Mascota:</label>
+        <input type="text" id="razaMascota" name="razaMascota" required>
+
+        <label for="edadMascota">Edad:</label>
+        <input type="number" id="edadMascota" name="edadMascota" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+
+        <label for="numeroChip">Número de Chip:</label>
+        <input type="text" id="numeroChip" name="numeroChip">
+
+        <label>Sexo de la Mascota:</label>
+        <div class="radio-group">
+        <div>
+            <input type="radio" id="macho" name="sexoMascota" value="macho" required>
+            Macho
+        </div>
+        <div>
+            <input type="radio" id="hembra" name="sexoMascota" value="hembra" required>
+            Hembra
+        </div>
+        </div>
+
+        <label for="pesoMascota">Peso de la Mascota (kg):</label>
+        <input type="number" id="pesoMascota" name="pesoMascota">
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" maxlength="500"></textarea>
+
+        <input type="submit" value="Registrar Mascota">
+    </form>
+</section>
+
+</body>
+</html>

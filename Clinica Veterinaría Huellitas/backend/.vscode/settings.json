@@ -1,0 +1,22 @@
+{
+    "workbench.editor.untitled.hint": "hidden",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "php.validate.executablePath": "C:\\Usuarios\\Raque\\Desktop\\php-8.2.10\\php.exe",
+    "liveServer.settings.donotVerifyTags": true,
+    "files.associations": {
+        "*.css": "css",
+        "*.html": "html"
+    },
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "files.autoSave": "afterDelay"
+}

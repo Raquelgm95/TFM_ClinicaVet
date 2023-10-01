@@ -1,0 +1,248 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ /* Foto de Fondo */
+
+.specialties-bg {
+    background-image: url('/img/serviciios.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 90px;
+}
+
+#servicios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative; 
+}
+
+#servicios h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 45px;
+    color: #126d6894;
+}
+
+#servicios p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4; 
+    color:#3f3e3e;
+    max-width: 400px;
+    margin: 40px 0 90px ;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#servicios h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #19b6a1; 
+    margin-bottom: 20px;
+    margin-top: 60px;
+    animation: slideLeftRight 4s linear;
+}
+
+#servicios ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 150px auto 50px;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+#servicios li {
+    width: calc(33.33% - 40px);
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    position:relative;
+    z-index: 3;
+}
+
+#servicios li img {
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+    margin: 15px 0;
+}
+
+#servicios li a {
+    font-size: 16px;
+    line-height: 1.4;
+    color:#126d68d3;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Estilo animado foto */
+
+.specialties-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+
+.specialties-bg:hover::before {
+    opacity: 1;
+}
+
+/* Estilo para el formulario */
+
+.formulario-container {
+    background-image:url('/img/fondo\ huellas.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 70%;
+    margin: auto;
+    padding: 70px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.formulario-container h3 {
+
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #149c86;
+    animation: fadeInUp 1s ease;
+}
+
+.formulario-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formulario-container input[type="text"],
+.formulario-container input[type="email"],
+.formulario-container textarea,
+.formulario-container select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #26caaf;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.formulario-container select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.formulario-container textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.formulario-container input[type="submit"] {
+    background-color: #26caaf;
+    color: rgb(51, 50, 50);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.formulario-container input[type="submit"]:hover {
+    background-color: #0e72619d;
+}
+
+/* Animacion Titulo h3*/
+
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animacion del formulario*/
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Linea Animacion */ 
+
+.linea-animada {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    margin: -120px 0 30px; 
+    animation: fadeIn 2s;
+}
+
+#servicios ul::before {
+    content: "";
+    position: absolute;
+    margin-top: -60px;
+    width: 100%;
+    height: 2px;
+    animation: fadeIn 2s;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

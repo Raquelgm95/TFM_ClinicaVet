@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/servicios.css" >
+    <link rel="stylesheet" href="/css/inicio.css">
+    <title>Nuestros Servicios</title>
+</head>
+<body> 
+
+<!-- Menú de navegación -->
+<nav>
+    <ul>
+        <li id="logo-clinica"><img src="/img/logo sin fondo.png" alt="logo-clinica huella"></li>
+        <li><a href="/html/Inicio.html">Inicio</a></li>
+        <li><a href="/html/Servicios.html">Servicios</a></li>
+        <li id="logo"><img src="/img/Huella sin fondo .png" alt="logo huella" ></li> 
+        <li><a href="/html/Inicio.html#contacto">Contacto</a></li>
+        <li><a href="/html/Registro.html">Registro Cliente</a></li>
+    </ul>
+</nav>
+
+<!-- Servicios -->
+<section id="servicios">
+    <div class="specialties-bg">
+    <h2>Especialidades</h2>
+    <p>Con la última ampliación hemos querido poder dar un servicio completo para tu mascota con nuevas especialidades que llevábamos tiempo queriéndote ofrecer.</p>
+    </div>
+
+    <h3>NUESTROS SERVICIOS</h3>
+
+<!--Bloque servicios-->
+    <ul>
+        <li>
+            <img src="/img/cirugia.jpg" alt="Cirugía Avanzada">
+            <a>Cirugia Avanzada</a>
+        </li>
+        <li>
+            <img src="/img/traumatologia.jpg" alt="Traumatología">
+            <a>Traumatología</a>
+        </li>
+        <li>
+            <img src="/img/dermatologia.jpg" alt="Dermatología">
+            <a>Dermatología</a>
+        </li>
+        <li>
+            <img src="/img/medicina felina.jpg" alt="Medicina Felina">
+            <a>Medicina Felina</a>
+        </li>
+        <li>
+            <img src="/img/oncologia.png" alt="Oncología">
+            <a>Oncología</a>
+        </li>
+        <li>
+            <img src="/img/mamiferos.jpg" alt="Pequeños Mamíferos">
+            <a>Pequeños Mamíferos</a>
+        </li>
+        <li>
+            <img src="/img/rehabilitacion.jpg" alt="Fisioterpía y Rehabilitación ">
+            <a>Fisioterpía y Rehabilitación </a>
+        </li>
+        <li>
+            <img src="/img/medicina interna.jpg" alt="Medicina Interna">
+            <a>Medicina Interna</a>
+        </li>
+        <li>
+            <img src="/img/cardiologia.jpg" alt="Cardiología y Enfermedades Pulmonares">
+            <a>Cardiología y Enfermedades Pulmonares</a>
+        </li>
+        <li>
+            <img src="/img/peluquería.jpg" alt="Peluquería">
+            <a>Peluquería</a>
+        </li>
+    </ul>
+</section>
+
+<!-- Formulario de contacto -->
+<div class="formulario-container">
+
+<!--Linea animacion-->
+<div class="linea-animada"></div>
+
+<!--Contenido Formulario-->
+
+    <h3>SOLICITA AQUÍ TU CITA</h3>
+    <form> <!--Añadir etiqueta action para aplicarlo a la base de datos -->
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="problema">¿Cuál es el problema?</label>
+        <select id="problema" name="problema" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="cita">Consulta</option>
+            <option value="vacuna">Vacuna</option>
+            <option value="revision">Revisión</option>
+            <option value="peluquería">Peluquería</option>
+        </select>
+
+        <label for="explicacion">Explícanos qué ocurre:</label>
+        <textarea id="explicacion" name="explicacion" maxlength="300"></textarea>
+
+        <input type="submit" value="Enviar Mensaje">
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,463 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+/* Bloque Menú de navegación */
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 10px;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #8585854f;
+}
+
+
+nav ul li a[href="#inicio"],
+nav ul li a[href="/html/Inicio.html"] {
+    color: rgba(30, 205, 236, 0.822);
+}
+
+nav ul li:last-child a {
+    color: rgb(226, 161, 64);
+}
+
+#logo-clinica {
+    position: absolute; 
+    top: 0;
+    left: 40px; 
+    display: inline-flex;
+    align-items: center;
+}
+
+#logo-clinica img {
+    width: 50px; 
+    transform: scale(3.5);
+    transition: transform 0.3s;
+}
+
+#logo {
+    display: inline-flex;
+}
+
+#logo img {
+    width: 50px; 
+    transform: scale(3.5);
+    transition: transform 0.3s;
+}
+
+/* Bloque Cabecera */
+
+.header-images {
+    position: relative;
+    height: 400px;
+    background-image: url("/img/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fadeImage 4s ease-in-out; 
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: fadeImage 4s ease-in-out;
+}
+
+/* Animacion cambio de imagen */
+
+@keyframes fadeImage {
+    0%, 100% {
+        opacity: 0; 
+    }
+    10%, 90% {
+        opacity: 1; 
+    }
+    90% {
+        opacity: 0; 
+    }
+}
+
+/* Bloque Boton Pedir Cita */
+
+.boton-cita {
+    position: fixed;
+    top: 3px; 
+    right: 8px; 
+    background-color: #89d9f873; 
+    padding: 6px 13px;
+    border-radius: 5px; 
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    z-index: 100;
+}
+
+.boton-cita a {
+    color: rgb(68, 68, 68); 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Bloque Sobre Nosotros */
+
+#inicio {
+    background-color: #f5d19b; 
+    background-image: url(/img/onda\ blanca.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+    padding: 80px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#inicio hr {
+    position: absolute;
+    width: 70%;
+    top: 40px; 
+    left: 15%;
+    border: none;
+    border-top: 1px solid #7272726e; 
+}
+
+#inicio h2 {
+    font-size: 32px;
+    color: #fac055be;
+    margin-bottom: 30px;
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+/* Bloque Especialidades */
+
+#especialidades {
+    text-align: center;
+    background-color: #59f5e825; 
+    padding: 30px; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+#especialidades h2 {
+    margin-bottom: 20px;
+}
+
+#especialidades h3 {
+    color:rgba(19, 180, 73, 0.473);
+    margin-bottom: 30px;
+}
+
+.especialidades {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.especialidades img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.especialidades h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.especialidades p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#especialidades::after { 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+}
+
+/* Bloque Nuestra Misión */
+
+#mision {
+    background-color: #fce2bc; 
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 800px; 
+    border: 2px solid #c9c9c9; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+#mision:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+    opacity: 0.9; /* Reduce la opacidad al pasar el cursor */
+}
+
+#mision h2, #mision h3 {
+    color: #000000; 
+}
+
+#mision p {
+    color: #333; 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+ /* Línea separadora */
+
+#mision::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ee7f00;
+    margin: 30px auto; 
+}
+
+/* Bloque Protectoras */
+
+#protectoras {
+    text-align: center; 
+    padding: 20px;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    margin-bottom: 30px;
+}
+
+#protectoras h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#protectoras p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+#protectoras ul {
+    list-style: none;
+    padding: 0;
+}
+
+#protectoras ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#protectoras ul li a {
+    color: #00a2ff; 
+    text-decoration: none;
+}
+
+#protectoras ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bloque de Contacto */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-image: url('/img/fondo\ huellas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.contact-title h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: rgb(17, 204, 148);
+    text-align: left; 
+    flex: 1; 
+}   
+
+.contact-title p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 8px;
+    max-width: 500px;
+    color: #333;
+}
+
+.contact-block {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-block p {
+    font-size: 13px;
+    line-height: 4;
+    color:  #555;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px; 
+
+}
+
+.contact-block a {
+    font-size: 13px;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    color: #555;
+}
+
+.contact-info {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    background-color: rgba(13, 219, 157, 0.418);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-info p {
+    margin: 10px;
+}
+
+
+/* Bloque de Redes Sociales */
+
+#redesSociales {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+#redesSociales::before { /* Linea decorativa */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: -10px; 
+    top: 40px;
+    left: 0;
+}
+
+#redesSociales h2 {
+    font-size: 28px;
+    color: #ffa12796;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#redesSociales p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#redessociales {
+    list-style: none;
+    padding: 0;
+}
+
+#redessociales li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+#redessociales a {
+    color: #555;
+    transition: color 0.3s;
+}
+
+#redessociales a:hover {
+    color: #ffa127d2;
+}
+
+/* Bloque Cookies */
+
+#politica-cookies {
+    background-image: url(/img/onda.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    position: relative;
+}
+
+#politica-cookies h2,p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
